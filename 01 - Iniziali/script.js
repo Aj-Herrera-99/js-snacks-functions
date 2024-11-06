@@ -18,7 +18,7 @@ function firstLettersArr(arr) {
   }
   return newArr;
 }
-
+//* arrow function
 const initialsArrow = (arr) => {
   const newArr = [];
   for (let i = 0; i < arr.length; i++) {
@@ -27,8 +27,14 @@ const initialsArrow = (arr) => {
   }
   return newArr;
 };
+
+//* arrow function and map
+const initialsMap = (arr) => {
+    return arr.map(value => value[0])
+}
 // Invoca la funzione qui e stampa il risultato in console
 const initials = firstLettersArr(names);
 console.log("Tradizionale: " + initials);
-console.log("Arrow: " + initialsArrow(names));
+console.log("Arrow version: " + initialsArrow(names));
+console.log("Arrow + map: " + initialsMap(names));
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
