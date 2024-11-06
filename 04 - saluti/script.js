@@ -4,10 +4,13 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+//* funzione tradizionale
+function greet(personName){
+    return "ciao " + personName;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log("Tradizionale: " + greet(name));
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
