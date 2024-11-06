@@ -9,8 +9,10 @@ function greet(personName){
     return "ciao " + personName;
 }
 
+//* arrow function
+const greetSomeone = (someone) => "ciao " + someone;
+
 // Invoca la funzione qui e stampa il risultato in console
 console.log("Tradizionale: " + greet(name));
-
-
+console.log("Arrow version: " + greetSomeone("Aj"));
 //Risultato atteso se si passa 'Mario': // ciao Mario
