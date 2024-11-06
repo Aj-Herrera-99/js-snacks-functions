@@ -50,10 +50,18 @@ const sameInitialsArrow = (letter, arr) => {
     return newArr;
 } 
 
+//* filter method e startsWith method
+//! assunzione: input lettera sempre maiuscolo (per semplicità);
+const sameInitialsFilter = (letter, arr) => {
+    return arr.filter(value => value.startsWith(letter));
+}
+
 // Invoca la funzione qui e stampa il risultato in console
 const sameInitials = namesStartWith("a", names);
 console.log("Tradizionale: " + sameInitials);
 console.log("Arrow version: " + sameInitialsArrow("l", names));
+console.log("(Assumi iniziale sempre maiuscolo)\nArrow + filter method: " 
+    + sameInitialsFilter("M", names));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
